@@ -1,0 +1,72 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 277
+  HorizontalOffset = 677
+  VerticalOffset = 129
+  Width = 558
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'E:\2doSemestre3RO\BD Practicas\guatiniUltimaJuego.db'
+    KeepConnection = True
+    Transaction = SQLTransaction1
+    AlwaysUseBigint = False
+    Left = 58
+    Top = 27
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    Params = <>
+    Left = 176
+    Top = 32
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection1
+    Left = 65
+    Top = 96
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 184
+    Top = 96
+  end
+  object SQLQuery2: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    Params = <>
+    Left = 56
+    Top = 184
+  end
+  object SQLite3Connection2: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Transaction = SQLTransaction2
+    AlwaysUseBigint = False
+    Left = 408
+    Top = 32
+  end
+  object SQLTransaction2: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection2
+    Left = 504
+    Top = 32
+  end
+  object SQLQuery3: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection2
+    Transaction = SQLTransaction2
+    Params = <>
+    Left = 408
+    Top = 120
+  end
+  object DataSource2: TDataSource
+    DataSet = SQLQuery3
+    Left = 504
+    Top = 120
+  end
+end
